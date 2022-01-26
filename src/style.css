@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#saffron,
+#white,
+#green {
+    height: 33.33vh;
+    width: 100vw;
+}
+
+#saffron {
+    background: linear-gradient(#FFAD5C, #FFA347, #FF9933);
+}
+
+#white {
+    background: #FFFFFF;
+}
+
+#green {
+    background: linear-gradient(#42A039, #2B9421, #138808);
+}
+
+#chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 33.33vh;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
